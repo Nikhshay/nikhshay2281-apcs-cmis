@@ -1,4 +1,4 @@
-public class HelloWorld
+ public class HelloWorld
     {
      public static void main (String args[] )
         {
@@ -6,4 +6,4 @@ public class HelloWorld
          
         } // end method main
         
-    } // end class HelloWorld
+    }// end class HelloWorld
