@@ -1,3 +1,5 @@
+package InputData;
+
 import javax.swing.JOptionPane;
 
 public class InputData
