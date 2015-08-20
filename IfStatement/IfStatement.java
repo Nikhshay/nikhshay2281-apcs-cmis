@@ -1,35 +1,24 @@
 package IfStatement;
 
+import javax.swing.JOptionPane;
 
-/**
- * Write a description of class IfStatement here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class IfStatement
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class IfStatement
-     */
-    public IfStatement()
     {
-        // initialise instance variables
-        x = 0;
-    }
+     public static void main (String[] args )
+        {
+        int psum1 = 0;
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
-}
+         
+         String input1 = JOptionPane.showInputDialog( " What is your first number? " );
+         String input2 = JOptionPane.showInputDialog( " What is your second number? " );
+         
+         int num1 = Integer.parseInt( input1 );
+         int num2 = Integer.parseInt( input2 );
+  
+         If num1 > num2;
+         
+         System.out.println( num1 + " + " + num2 + " = " + psum1 );
+         
+        } // end method main
+        
+    } // end class IfStatement
