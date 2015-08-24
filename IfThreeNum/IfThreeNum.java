@@ -1,8 +1,8 @@
-package IfOddEven;
+package IfThreeNum;
 
 import javax.swing.JOptionPane;
 
-public class IfOddEven
+public class IfThreeNum
     {
      public static void main (String[] args )
         {
@@ -13,7 +13,6 @@ public class IfOddEven
          
         int num1 = Integer.parseInt( input1 );
          
-        modulo = num1 % 2;
          
         if ( modulo == one  )
             {
@@ -25,4 +24,4 @@ public class IfOddEven
             }    
         } // end method main
         
-    } // end class IfOddEven
+    } // end class IfThreeNum

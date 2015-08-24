@@ -14,7 +14,7 @@ public class IfStatement
          
         if ( num1 > num2 )
             {
-            System.out.println( "The value of the first number is " + num1 + " and it is less than the second number whose value is " + num2 );
+            System.out.println( "The value of the first number is " + num1 + " and it is more than the second number whose value is " + num2 );
             }
         if ( num2 > num1 )
             {

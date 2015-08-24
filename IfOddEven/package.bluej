@@ -1,18 +1,18 @@
 #BlueJ package file
 objectbench.height=76
-objectbench.width=686
+objectbench.width=503
 package.editor.height=400
-package.editor.width=560
-package.editor.x=850
-package.editor.y=278
+package.editor.width=377
+package.editor.x=870
+package.editor.y=127
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
 package.showUses=true
 target1.editor.height=700
 target1.editor.width=900
-target1.editor.x=700
-target1.editor.y=175
+target1.editor.x=141
+target1.editor.y=133
 target1.height=50
 target1.name=IfOddEven
 target1.naviview.expanded=true
