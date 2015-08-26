@@ -4,9 +4,9 @@ When you know the answer, create a secret gist and send the link to me.
 */
 public class LoopProblem
 {
-    public static void main ( String argv[] )
+    public static void main ( String arg[] )
     {
-        for( i = 1; i < 20; i++ )
+        for( int i = 1; i < 20; i++ )
         {
             System.out.println(i);
            
