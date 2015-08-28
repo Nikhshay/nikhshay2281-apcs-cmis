@@ -6,14 +6,22 @@ public class TopThreeThings
     {
      public static void main (String[] args )
         {
-        mov1=asdsad;
-        mov2=afdsf;
-        mov3=asdfsdaf;
         
-        for ( mov1=asdsad; mov2=afdsf; mov3=asdfsdaf )
+        String[] Movies = {"50 Shades of Grey", "Wolf of Wall Street","Great Gatsby"};
+        for ( int index = 0 ; index < Movies.length;index++)
             {
-            System.out.println( mov1 + "\n" + mov2 + "\n" + mov3 + "\n" + "\n");
+            System.out.println( Movies[index] );
         }
+        System.out.println("\n\n");
+        
+        String[] song = {"Stay with me", " Demons ", " Let her go"};
+        int index= 0;
+        
+        while (index < song.length)
+               {
+                   System.out.println(song + ",");
+                   index++;
+       }
         } // end method main
         
     } // end class TopThreeThings
