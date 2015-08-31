@@ -19,7 +19,7 @@ public class TopThreeThings
         
         while (index < song.length)
                {
-                   System.out.println(song + ",");
+                   System.out.print(song[index] + " , ");
                    index++;
        }
         } // end method main

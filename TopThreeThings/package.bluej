@@ -1,20 +1,21 @@
 #BlueJ package file
 objectbench.height=76
 objectbench.width=686
-package.editor.height=400
+package.editor.height=356
 package.editor.width=560
-package.editor.x=286
-package.editor.y=252
+package.editor.x=888
+package.editor.y=80
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
 package.showUses=true
 target1.editor.height=700
 target1.editor.width=900
-target1.editor.x=745
-target1.editor.y=13
+target1.editor.x=457
+target1.editor.y=42
 target1.height=50
 target1.name=TopThreeThings
+target1.naviview.expanded=true
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
