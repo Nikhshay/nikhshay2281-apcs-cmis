@@ -1,4 +1,4 @@
-package TopThreeThings;
+package Fundamental5;
 
 import javax.swing.JOptionPane;
 

@@ -1,4 +1,4 @@
-package FavoriteStuff;
+package Fundamental1;
 
 public class FavoriteStuff
     {

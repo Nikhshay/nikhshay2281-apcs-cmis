@@ -1,4 +1,4 @@
-package IfStatement;
+package Fundamental2;
 
 import javax.swing.JOptionPane;
 

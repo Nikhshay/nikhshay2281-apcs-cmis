@@ -1,4 +1,4 @@
-package ForThreeNUmber;
+package Fundamental4;
 
 import javax.swing.JOptionPane;
 

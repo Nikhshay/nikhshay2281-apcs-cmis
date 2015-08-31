@@ -1,4 +1,4 @@
-package IfOddEven;
+package Fundamental3;
 
 import javax.swing.JOptionPane;
 

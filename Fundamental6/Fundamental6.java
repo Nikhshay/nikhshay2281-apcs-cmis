@@ -10,10 +10,12 @@ public class Fundamental6
         int[] myArray = new int[50];
         for( int index = 0; index < myArray.length; index++ )
         {
-            random = index + / (int) (Math.random());
-            System.out.println(random);
+            random = (int) (89 + Math.random());
         }   
-       
+       for (int index = 0; index < myArray.length; index++)
+       {
+           System.out.print(random + " ");
+        }
         } // end method main
         
     } // end class Fundamental6
