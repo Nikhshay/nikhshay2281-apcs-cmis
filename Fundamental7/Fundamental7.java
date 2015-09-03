@@ -7,32 +7,44 @@ public class Fundamental7
      public static void main (String[] args )
         {
         int[] myArray = new int[10];
-        int neg = 0;
+        int b = 0;
+        int c = 0;
         for( int index = 0; index < myArray.length; index++ )
         {
-            myArray[index] = (int) (Math.random()*100);
-            if ( myArray[index] < 50)
+            int a = 0;
+             a = (int) (100*Math.random());
+            if ( a % 2 == 0)
             {
-                 neg = myArray[index] * -1 ; 
-                 System.out.print(neg + " ");
+                myArray[index] = (int) (Math.random()*100*(-1)); 
+                b++;
                 }
             else
             {
-                  System.out.print(myArray[index] + " ");
+                  myArray[index] = (int) (Math.random()*100);
+                  c++;
                  }
         }
-        }   
-       //while (index2 < myArray.length)
-       //{
-           //System.out.println(myArray[index2] + " ");
-           //myArray[index2]++;
-        //}
-       //if (myArray[index] > 0)
-       //{
-       //    System.out.println(myArray[index2]);
-       // }
+           
+      
+        int  index = 0;
+
+        while ( index < myArray.length )
+        {
+                System.out.println(myArray[index] + " ");
+                index++;
+        }
+        
+        System.out.println ("The number of postivie numbers are" + c + ", and the number of negative numbers are " + b +".");
+        
+        for (int a = 0; a< myArray.length; a++)
+        {
+            if (myArray [a] > 0)
+        { 
+           System.out.print(myArray[a] + "\t" );
+        }
+       }
         } // end method main
         
-     // end class Fundamental7
+    }// end class Fundamental7
 
         
