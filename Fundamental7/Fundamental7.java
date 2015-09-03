@@ -11,16 +11,18 @@ public class Fundamental7
         int c = 0;
         for( int index = 0; index < myArray.length; index++ )
         {
-            int a = 0;
-             a = (int) (100*Math.random());
-            if ( a % 2 == 0)
+            double a = 0;
+             a = Math.random();
+            if ( a < 0.5)
             {
                 myArray[index] = (int) (Math.random()*100*(-1)); 
+                a++;
                 b++;
                 }
             else
             {
                   myArray[index] = (int) (Math.random()*100);
+                  a++;
                   c++;
                  }
         }

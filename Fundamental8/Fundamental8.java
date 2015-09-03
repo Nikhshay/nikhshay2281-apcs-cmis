@@ -24,18 +24,18 @@ public class Fundamental8
        
        for (b =  0; b < myArray.length; b++)
        {
-           if( b == "Michael Jackson" )
+           if( myArray[b].equals ( "Michael Jackson") )
            {
-               System.out.println("MIchael Jackson have arrived");
+               System.out.println("Michael Jackson have arrived");
             }
             else
            {    
-               sdf
+               System.out.println("Michael Jackson not found ["+b+"]");
             }
         }
-        }
         } // end method main
+        } // end class Fundamental8
         
-    // end class Fundamental8
+    
 
         

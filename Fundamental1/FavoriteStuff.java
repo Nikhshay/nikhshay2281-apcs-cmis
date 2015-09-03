@@ -1,5 +1,7 @@
 package Fundamental1;
 
+import javax.swing.JOptionPane;
+
 public class FavoriteStuff
     {
      public static void main (String args[] )
