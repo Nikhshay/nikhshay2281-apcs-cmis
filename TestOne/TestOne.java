@@ -12,35 +12,39 @@ public class TestOne
         int num1 = Integer.parseInt( input1 );
          
         int[] myArray = new int[num1];
-        int b = 0;
+        double b = 0;
         
         for( int index = 0; index < myArray.length; index++ )
         {
-            myArray[index] = (int)((Math.random() * 510000000));
+            myArray[index] = (int)((Math.random() * (51-0)+10));
            
-            b = myArray[index] / 10000000;
+            b = myArray[index] / 10;
             System.out.println("["+index+"]" +  b);
-            }
-        } 
-         
-      int index2 = ;
-        {
-        while (index2 > myArray.length)
-        {
-            System.out.println("["+index+"]" + myArray[index2] );
+            }// end making decimal number 
+       
+           int index2 = num1;
+        
+          while (index2 > myArray.length)
+           {
+            System.out.println("["+index2+"]" + myArray[index2] );
             index2--;
-        }
-        for ( int index = 0; index < myArray.length; index++ )
-        {
+            }
+            
+          int  modulo = 0;
+          int one = 1;  
+          
+          for ( int index = 0; index < myArray.length; index++ )
+           {
             modulo = myArray[index] % 2; 
             if ( modulo == one  )
             {
-            System.out.println( "The number " + num1 + " is odd" );
+              System.out.println( "E" + myArray[index] );
              }
             else
             {
-            System.out.println( "The number " + num1 + " is even" );        
+              System.out.println( "O" + myArray[index] );        
             }
-        }
-    }
+            
+          }
+  }
 }
