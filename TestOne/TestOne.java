@@ -12,12 +12,35 @@ public class TestOne
         int num1 = Integer.parseInt( input1 );
          
         int[] myArray = new int[num1];
+        int b = 0;
         
         for( int index = 0; index < myArray.length; index++ )
         {
-            myArray[index] = (int) (((Math.random()*51000000000) / 100000000000.0);
-            System.out.println(myArray[index] + " ");
+            myArray[index] = (int)((Math.random() * 510000000));
+           
+            b = myArray[index] / 10000000;
+            System.out.println("["+index+"]" +  b);
+            }
         } 
-        } // end method main
-        
-    } // end class TestOne
+         
+      int index2 = ;
+        {
+        while (index2 > myArray.length)
+        {
+            System.out.println("["+index+"]" + myArray[index2] );
+            index2--;
+        }
+        for ( int index = 0; index < myArray.length; index++ )
+        {
+            modulo = myArray[index] % 2; 
+            if ( modulo == one  )
+            {
+            System.out.println( "The number " + num1 + " is odd" );
+             }
+            else
+            {
+            System.out.println( "The number " + num1 + " is even" );        
+            }
+        }
+    }
+}
