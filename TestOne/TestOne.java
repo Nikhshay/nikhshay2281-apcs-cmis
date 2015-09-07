@@ -11,38 +11,38 @@ public class TestOne
          
         int num1 = Integer.parseInt( input1 );
          
-        int[] myArray = new int[num1];
+        double[] myArray = new double[num1];
         double b = 0;
         
         for( int index = 0; index < myArray.length; index++ )
         {
-            myArray[index] = (int)((Math.random() * (51-0)+10));
-           
-            b = myArray[index] / 10;
-            System.out.println("["+index+"]" +  b);
-            }// end making decimal number 
+            myArray[index] = (double) (Math.random() * 51); 
+
+            System.out.println("["+index+"]" + myArray[index]);
+            }// end making decimal number // end making decimal number 
        
-           int index2 = num1;
+        int index2 = num1;
         
-          while (index2 > myArray.length)
+        while (index2 > myArray.length)
            {
             System.out.println("["+index2+"]" + myArray[index2] );
             index2--;
-            }
+        }
             
           int  modulo = 0;
           int one = 1;  
           
-          for ( int index = 0; index < myArray.length; index++ )
+          
+          for ( int index3 = 0; index3 < myArray.length; index3++ )
            {
-            modulo = myArray[index] % 2; 
+            modulo = (int)(myArray[index3]) % 2; 
             if ( modulo == one  )
             {
-              System.out.println( "E" + myArray[index] );
+              System.out.println( "E" + myArray[index3] );
              }
             else
             {
-              System.out.println( "O" + myArray[index] );        
+              System.out.println( "O" + myArray[index3] );        
             }
             
           }
