@@ -16,35 +16,36 @@ public class TestOne
         
         for( int index = 0; index < myArray.length; index++ )
         {
-            myArray[index] = (double) (Math.random() * 51); 
-
+            myArray[index] = (double) (Math.random() * (50-1)+1); 
             System.out.println("["+index+"]" + myArray[index]);
             }// end making decimal number // end making decimal number 
        
-        int index2 = num1;
+        int index2 = (myArray.length-1);
         
-        while (index2 > myArray.length)
+        while (index2 >= 0)
            {
-            System.out.println("["+index2+"]" + myArray[index2] );
-            index2--;
-        }
-            
-          int  modulo = 0;
-          int one = 1;  
-          
-          
-          for ( int index3 = 0; index3 < myArray.length; index3++ )
-           {
-            modulo = (int)(myArray[index3]) % 2; 
-            if ( modulo == one  )
-            {
-              System.out.println( "E" + myArray[index3] );
-             }
+            int value = (int)(myArray[index2]); 
+            if ( value%2==0  )
+              {
+              String e = ("E");
+              
+              for (int c = 0; c <= value; c++ )
+              {
+                e += "E";
+               }
+               System.out.println( e + myArray[index2] );
+            }
             else
             {
-              System.out.println( "O" + myArray[index3] );        
+               String o = ("O");
+              
+              for (int d = 0; d <= value; d++ )
+              {
+                o += "O";
+               }
+              System.out.println( o + myArray[index2] );
             }
-            
-          }
+            index2--;
+        }
   }
 }

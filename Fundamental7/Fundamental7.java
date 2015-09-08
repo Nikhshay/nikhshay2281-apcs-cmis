@@ -38,7 +38,7 @@ public class Fundamental7
         
         System.out.println ("The number of postivie numbers are" + c + ", and the number of negative numbers are " + b +".");
         
-        for (int a = 0; a< myArray.length; a++)
+        for (int a = 0; a < myArray.length; a++)
         {
             if (myArray [a] > 0)
         { 
