@@ -14,17 +14,18 @@ public class Histogram
             
         } // end for loop
         
-        int countint[] = new int[num1];
+        int countint[] = new int[100];
         int a = 0;
-        
         for ( int firstcount = 0; firstcount < randomint.length; firstcount++ )
         {
-              String e = "#";
-              if (firstcount == countint.length)
-              {
-                countint[firstcount] += 1;
-               }
-               System.out.println(countint[firstcount] + e);
+            System.out.println(randomint[firstcount]);
+            for (int secondcount = 0; secondcount < countint.length; secondcount++)
+            {
+                countint[secondcount]++;
+                System.out.println(countint[secondcount]);
+            }
+            
+            }
          }
     }
-}
+
