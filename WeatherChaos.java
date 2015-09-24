@@ -12,18 +12,22 @@ public class WeatherChaos
         int max = 0;
         int sum = 0;
         int swing = 0;
+        String description;
+        int thisnumber;
+        
         
         for ( int index = 0; index < randomint.length; index++ )
         {
             randomint[index] = (int) (Math.random() * 200) - 100;
-            if (randomint[index] < min)
+            thisnumber = randomint[index];
+            if (thisnumber < min)
             {
-                min = randomint[index];
+                min = thisnumber;
             }
             
-            if (randomint[index] > max)
+            if (thisnumber > max)
             {
-                max = randomint[index];
+                max = thisnumber;
             }
             sum += randomint[index];
         } // end for loop
@@ -32,18 +36,42 @@ public class WeatherChaos
         {
             System.out.print("Days \t" + "temperature \t" + "temperature swing from the previous day \t" + "description");
 
-            for (int i = 0; i < randomint.length; i++)
-            { 
+              for (int i = 0; i < randomint.length; i++)
+              { 
                days += 1; 
-               int b = 0;
-               
+              int b = 0;
                while (b < randomint.length)
                {
-                   swing = randomint[b-1];
-                   swing++;
+                   swing = b-1;
+                   b++;
                 }
-               System.out.println(days + "\t" + randomint[i] + "\t" + swing + "wait");
+                
+               for (int c = 0; c < randomint.length; c++) 
+               {
+                   
+                if (randomint[c] < 0 )
+                {
+                   description = "freezing";
                 }
+                if (randomint[c] >= 0 && randomint[c] <= 15)
+                {
+                   description = "chilly";
+                }
+                if (randomint[c] >= 16 && randomint[c] <= 30)
+                {
+                    description = "comfortable";
+                }
+                if (randomint[c] >= 31  && randomint[c] <= 40)
+                {
+                   description = "hot";
+                }
+                if (randomint[c] > 40)
+                {
+                   description = "AAAAAAUUUUGGGHHH!";
+                }
+              }
+                System.out.println(days + "\t" + randomint[i] + "\t" + randomint[swing] + "\t" + description);
+            }
             
             System.out.println("MIN: " + min);
             System.out.println("MAX: " + max);
