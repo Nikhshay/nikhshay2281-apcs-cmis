@@ -7,12 +7,12 @@ public class WeatherChaos
         String input = JOptionPane.showInputDialog("please give me a number");
         int num1 = Integer.parseInt(input);
         int randomint[] = new int[num1];
-        int days = 1;
+        int days = -1;
         int min = 99;
         int max = 0;
         int sum = 0;
         int swing = 0;
-        String description;
+        String description ="";
         int thisnumber;
         
         
