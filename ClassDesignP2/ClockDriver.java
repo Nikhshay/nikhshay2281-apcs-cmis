@@ -18,4 +18,3 @@ public class ClockDriver
         
     }
 }
-  // make j option pane for the kitten clock
