@@ -2,25 +2,25 @@ package ClassDesignP5;
 
 public class Card
 {
-    private String fname;
-    private String lname;
-    private int age;
-    private double weight;
+    private String playername;
+    private String gamename;
+    private int totalcard;
+    private int cardinhand;
     
-    public Student()
+    public Card( String playername, String gamename )
     {
-       
-    }
-    
-    public Student( )
-    {
-     
+       this.playername = playername;
+       this.gamename = gamename;
+       totalcard = 52;
+       cardinhand = 3;
     }
    
     public String toString()
     {
         String output = new String();
-        output = ;
+        output = "Today, " + playername + 
+        " is going to play" + gamename + " with us. \n" + 
+        "Todays deck has " + totalcard + "cards totally.";
         return output;
     }
     
