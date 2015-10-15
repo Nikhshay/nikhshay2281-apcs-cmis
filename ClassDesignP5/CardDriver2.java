@@ -1,6 +1,6 @@
 package ClassDesignP5;
 
-public class CardDriver
+public class CardDriver2
 {
     public static void main (String[] arg)
     {
