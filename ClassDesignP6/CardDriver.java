@@ -1,4 +1,4 @@
-package ClassDesignP5;
+package ClassDesignP6;
 
 public class CardDriver
 {
@@ -10,7 +10,7 @@ public class CardDriver
      
      Card gameA = new Card( );
      System.out.println(gameA);
-     for( int i = 0 ; i < myHand.length; i++)
+     for( int i = 1 ; i < myHand.length; i++)
      {
          int a = ((int) (Math.random()*13));
          int b = ((int) (Math.random()*4));
