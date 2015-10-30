@@ -10,6 +10,7 @@ public class CardDriver
      
      Card gameA = new Card( );
      System.out.println(gameA);
+     
      for( int i = 0 ; i < myHand.length; i++)
      {
          int a = ((int) (Math.random()*13));
