@@ -5,26 +5,26 @@ public class CardDriver2
     public static void main (String[] arg)
     {
      String[] allRank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
+     int[] point = {2, 3, 4, 5, 6, 7, 8, 9, 10, 10 , 10, 10, 11};
      String[] allSuit = {"clubs", "spades", "diamonds", "hearts"};
-     int[] worth = { 1,2,3,4,5,6,7,8,9,10,10,10,10};
      
+     Card[] Dealer = new Card [2];
      
-     String[] player2 = new String [2];
-     String[] player3 = new String [2];
-     String[] player4 = new String [2];
-     String[] player5 = new String [2];
-     String[] dealer = new String [2];
-     
-     for( int i = 1 ; i < 2; i++)
-     {
-         Card[] player1 = new Card [2];
-          for( int a = 1 ; a < player1.length; a++)
-          {
-         System.out.println(player1[Card]);
-        }
+     System.out.print("Dealer: ");
+     for( int i = 0; i < Dealer.length; i++)
+       {
+        int a = ((int) (Math.random()*13));
+        int b = ((int) (Math.random()*4));
+        Dealer[i] = new Card( allRank[a], allSuit[b] );
+        System.out.print(Dealer[i] + " ");
+        
+        for(int c = 0; c < allRank.length; c++)
+        {
+            allRank[c] = Integer.parseInt(allRank[c]);
+            System.out.print(allRank[c]);
         
         }
-     
 
     }
+  }
 }

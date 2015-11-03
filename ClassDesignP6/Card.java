@@ -20,7 +20,7 @@ public class Card
     public String toString()
     {
         String output = new String();
-        output = "The card is "+ rank + " of " + suit;
+        output = rank + " of " + suit;
         return output;
     }
     
