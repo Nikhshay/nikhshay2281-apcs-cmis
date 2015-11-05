@@ -75,10 +75,7 @@ public class CardDriver2
                 Worth = 10;
             }
            DealerWorth += Worth;
-           if (DealerWorth == 21)
-           {
-               System.out.println( "Ddealer is the winner!)"); 
-            }
+  
         }
        System.out.println("Points in hand " + DealerWorth + "\n");
       }
@@ -143,10 +140,7 @@ public class CardDriver2
                 Worth = 10;
             }
            PlayerWorth += Worth;
-           if (PlayerWorth == 21)
-           {
-               System.out.println( "You are the winner!)"); 
-            }
+
         }
        System.out.println("Points in hand " + PlayerWorth + "\n");
     }
@@ -230,10 +224,6 @@ public class CardDriver2
                 Worth = 10;
             }
            PlayerWorth += Worth;
-           if (PlayerWorth == 21)
-           {
-               System.out.println( "You are the winner!)"); 
-            }
         }
        System.out.println("Points in hand " + PlayerWorth + "\n");
     }
@@ -317,10 +307,7 @@ public class CardDriver2
                 Worth = 10;
             }
            PlayerWorth += Worth;
-           if (PlayerWorth == 21)
-           {
-               System.out.println( "You are the winner!)"); 
-            }
+
         }
        System.out.println("Points in hand " + PlayerWorth + "\n");
     }
@@ -404,15 +391,11 @@ public class CardDriver2
                 Worth = 10;
             }
            PlayerWorth += Worth;
-           if (PlayerWorth == 21)
-           {
-               System.out.println( "You are the winner!)"); 
-            }
         }
        System.out.println("Points in hand " + PlayerWorth + "\n");
     }
       
-    if (PlayerWorth==21)
+       if (PlayerWorth==21)
         {
             Winner = "Player 4";
             System.out.print("RESULT : Player 4 Won Dealer with 21 Points");
@@ -492,10 +475,7 @@ public class CardDriver2
                 Worth = 10;
             }
            PlayerWorth += Worth;
-           if (PlayerWorth == 21)
-           {
-               System.out.println( "You are the winner!)"); 
-            }
+
         }
        System.out.println("Points in hand " + PlayerWorth + "\n");
     }
