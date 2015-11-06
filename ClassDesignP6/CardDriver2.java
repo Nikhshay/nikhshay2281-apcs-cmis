@@ -75,7 +75,10 @@ public class CardDriver2
                 Worth = 10;
             }
            DealerWorth += Worth;
-  
+           if( DealerWorth > 21)
+           {
+            DealerWorth = Worth - 10; 
+           }
         }
        System.out.println("Points in hand " + DealerWorth + "\n");
       }
@@ -140,7 +143,10 @@ public class CardDriver2
                 Worth = 10;
             }
            PlayerWorth += Worth;
-
+           if( PlayerWorth > 21)
+           {
+            PlayerWorth = Worth - 10; 
+           }
         }
        System.out.println("Points in hand " + PlayerWorth + "\n");
     }
@@ -223,7 +229,11 @@ public class CardDriver2
              {
                 Worth = 10;
             }
-           PlayerWorth += Worth;
+            PlayerWorth += Worth;
+           if( PlayerWorth > 21)
+           {
+            PlayerWorth = Worth - 10; 
+           }
         }
        System.out.println("Points in hand " + PlayerWorth + "\n");
     }
@@ -307,7 +317,10 @@ public class CardDriver2
                 Worth = 10;
             }
            PlayerWorth += Worth;
-
+           if( PlayerWorth > 21)
+           {
+            PlayerWorth = Worth - 10; 
+           }
         }
        System.out.println("Points in hand " + PlayerWorth + "\n");
     }
@@ -391,6 +404,10 @@ public class CardDriver2
                 Worth = 10;
             }
            PlayerWorth += Worth;
+           if( PlayerWorth > 21)
+           {
+            PlayerWorth = Worth - 10; 
+           }
         }
        System.out.println("Points in hand " + PlayerWorth + "\n");
     }
@@ -475,7 +492,10 @@ public class CardDriver2
                 Worth = 10;
             }
            PlayerWorth += Worth;
-
+           if( PlayerWorth > 21)
+           {
+            PlayerWorth = Worth - 10; 
+           }
         }
        System.out.println("Points in hand " + PlayerWorth + "\n");
     }
