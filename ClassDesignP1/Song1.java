@@ -54,7 +54,8 @@ public class Song1
         String output = new String();
         output = "The title of the song is: " + title + "\n" +
                  "The genre of the song is: " + genre + "\n" +
-                 "The runtime of the song is: " + playmin() + " minutes " + playsec() + " seconds ";
+                 "The runtime of the song is: " + playmin() + " minutes " + playsec() + " seconds " +
+                 "The year released is: " + yearReleased + "\n";
         return output;
     }
     
