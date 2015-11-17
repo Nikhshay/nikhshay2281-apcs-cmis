@@ -21,7 +21,7 @@ public class SongDriver2
         if (input1.equals ("Nikhshay") && num1 == 2281 ) 
         {
             SongA.getYearReleased();
-            SongA.setYearReleased(2019);;
+            SongA.setYearReleased(2019);
         }
         System.out.println(SongA);
     }

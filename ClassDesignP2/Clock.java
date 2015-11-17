@@ -5,6 +5,7 @@ public class Clock
     private int hour;
     private int minutes;
     private int seconds;
+    private int convertDaylightSaving;
     
     public Clock()
     {
@@ -19,7 +20,49 @@ public class Clock
         this.minutes = minutes;
         this.seconds = seconds;
     }
-   
+    
+    public int getHour()
+    {
+        return hour;
+    }
+    
+    public void setHour (int hours)
+    {
+        this.hour = hours;
+    }
+    
+    public int getMinutes()
+    {
+        return minutes;
+    }
+    
+    public void setMinutes (int min)
+    {
+        this.minutes = min;
+    }
+    
+    public int getSeconds()
+    {
+        return seconds;
+    }
+    
+    public void setSeconds (int sec)
+    {
+        this.seconds = sec;
+    }
+    
+    public int convertDaylightSaving()
+    {
+        if (//something equal “Springing forward”)
+        {
+            hour -= 1
+        }
+        else 
+        {
+            hour += 1
+        }
+    }
+
     public String toString()
     {
         String output = new String();
