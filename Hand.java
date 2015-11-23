@@ -1,11 +1,16 @@
 public class Hand
     {
-     public static void main (String args[] )
-        {
-          int numberofcards = 2;
-          int totalpoints;
-          
-          for (
-        } 
         
+          private int numberofcards;
+          private int totalpoints;
+          private String name;
+          
+          public Hand(String name, String numberofcards, Card card)
+          {
+              Card[] = new Card[2];
+              this.name = name;
+              this.numberofcards = numberofcards;
+              this.card = card;
+              
+            }
     }
