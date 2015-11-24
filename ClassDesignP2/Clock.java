@@ -53,13 +53,14 @@ public class Clock
     
     public int convertDaylightSaving()
     {
-        if (//something equal “Springing forward”)
+        if //(something equal “Springing forward”)
         {
-            hour -= 1
+            hour -= 1;
         }
+        
         else 
         {
-            hour += 1
+            hour += 1;
         }
     }
 
