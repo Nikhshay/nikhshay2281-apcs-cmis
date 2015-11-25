@@ -51,17 +51,16 @@ public class Clock
         this.seconds = sec;
     }
     
-    public int convertDaylightSaving()
+    public int totalSeconds()
     {
-        if //(something equal “Springing forward”)
-        {
-            hour -= 1;
-        }
-        
-        else 
-        {
-            hour += 1;
-        }
+         this.seconds += (this.hour * 3600) + (this.minutes * 60);
+         System.out.println("TIme in seconds " + seconds);
+         return seconds;
+    }
+    
+    public int convertDaylightSaving(int hour)
+    {
+        return hour += hour;
     }
 
     public String toString()

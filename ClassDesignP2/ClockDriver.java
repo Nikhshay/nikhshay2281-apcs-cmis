@@ -27,5 +27,10 @@ public class ClockDriver
         
         System.out.println(bedroomClock);
         
+        Clock DayLightClock = new Clock(11, 12, 35);
+        DayLightClock.convertDaylightSaving(1);
+        System.out.println("New time " + DayLightClock);
+        DayLightClock.totalSeconds();
+        
     }
 }
