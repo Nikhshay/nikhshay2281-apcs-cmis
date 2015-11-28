@@ -5,7 +5,7 @@ public class Clock
     private int hour;
     private int minutes;
     private int seconds;
-    private int convertDaylightSaving;
+    private int sec;
     
     public Clock()
     {
@@ -21,14 +21,25 @@ public class Clock
         this.seconds = seconds;
     }
     
+    public String toString()
+    {
+        String output = String.format( 
+                "hour: %d\n" +
+                "Minutes: %d\n" +
+                "Seconds: %d\n"  + 
+                "Time in Seconds:  %d", hour ,minutes ,seconds, sec); 
+
+        return output;
+    }
+    
     public int getHour()
     {
         return hour;
     }
     
-    public void setHour (int hours)
+    public void setHour (int hour)
     {
-        this.hour = hours;
+        this.hour = hour;
     }
     
     public int getMinutes()
@@ -36,9 +47,9 @@ public class Clock
         return minutes;
     }
     
-    public void setMinutes (int min)
+    public void setMinutes (int minutes)
     {
-        this.minutes = min;
+        this.minutes = minutes;
     }
     
     public int getSeconds()
@@ -46,29 +57,21 @@ public class Clock
         return seconds;
     }
     
-    public void setSeconds (int sec)
+    public void setSeconds (int seconds)
     {
-        this.seconds = sec;
+        this.seconds = seconds;
     }
     
     public int totalSeconds()
     {
-         this.seconds += (this.hour * 3600) + (this.minutes * 60);
-         System.out.println("TIme in seconds " + seconds);
-         return seconds;
+         sec = (hour * 3600) + (minutes * 60) + seconds;
+         return sec;
     }
     
-    public int convertDaylightSaving(int hour)
+    public int convertDaylightSaving(int hours)
     {
-        return hour += hour;
+        hour = hours + hour;
+        return hour;
     }
 
-    public String toString()
-    {
-        String output = new String();
-        output = "The time is: " + hour + " : " + minutes + " : " + seconds + " .";
-        return output;
-    }
-    
-    
 }

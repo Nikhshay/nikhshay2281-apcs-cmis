@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Student()
+comment1.params=fname\ lname\ age\ weight
+comment1.target=Student(java.lang.String,\ java.lang.String,\ int,\ double)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=fname\ lname\ english\ math\ science\ fineArts\ socialScience
+comment3.target=Student(java.lang.String,\ java.lang.String,\ double,\ double,\ double,\ double,\ double)
+comment4.params=english\ math\ science\ fineArts\ socialScience
+comment4.target=void\ setGPA(double,\ double,\ double,\ double,\ double)
+comment5.params=
+comment5.target=double\ calcGPA()
+numComments=6

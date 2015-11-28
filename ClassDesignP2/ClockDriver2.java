@@ -1,31 +1,30 @@
 package ClassDesignP2;
-import javax.swing.JOptionPane; 
 
 public class ClockDriver2
 {
     public static void main (String[] arg)
     {
-       int hour = Integer.parseInt(JOptionPane.showInputDialog("What the hour?"));
-       int min = Integer.parseInt(JOptionPane.showInputDialog("What the minute?"));
-       int sec = Integer.parseInt(JOptionPane.showInputDialog("What the seconds?"));
-
         Clock bedroomClock = new Clock();
-        
-        Clock kitchenClock = new Clock( hour , min , sec );
-        
+        Clock kitchenClock = new Clock( 12, 13, 14 );
+        bedroomClock.totalSeconds();
         System.out.println(bedroomClock);
+        
+        kitchenClock.getHour();
+        kitchenClock.setHour(12);
+        
+        kitchenClock.getMinutes();
+        kitchenClock.setMinutes(58);
+        
+        kitchenClock.getSeconds();
+        kitchenClock.setSeconds(25);
+        
+        kitchenClock.totalSeconds();
         System.out.println(kitchenClock);
         
-        bedroomClock.getHour();
-        bedroomClock.setHour(12);
         
-        bedroomClock.getMinutes();
-        bedroomClock.setMinutes(58);
-        
-        bedroomClock.getSeconds();
-        bedroomClock.setSeconds(25);
-        
-        System.out.println(bedroomClock);
+        kitchenClock.convertDaylightSaving(1);
+        kitchenClock.totalSeconds();
+        System.out.println(kitchenClock);
         
     }
 }
