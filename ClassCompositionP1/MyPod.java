@@ -31,8 +31,12 @@ public class MyPod
     {
         String output = new String();
         output = "The color is: " + color + "\n" +
-                 "The memory  is: " + memory + "\n" +
-                 "The song is: " + songLibrary ;
+                 "The memory  is: " + memory + "\n" ;
+                 
+        for(String songs : songLibrary)
+        {
+            output += songs + "\n";
+        }
         return output;
     }
 }
