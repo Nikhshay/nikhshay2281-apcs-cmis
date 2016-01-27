@@ -19,7 +19,7 @@ public class Student
         this.lname = lname;
         this.gpa = gpa;
     }
-   
+    
     public double getGPA()
     {
         return this.gpa;
@@ -28,6 +28,11 @@ public class Student
     public String getName()
     {
         return this.fname + this. lname;
+    }
+    
+    public String getlname()
+    {
+        return this.lname;
     }
     
     public String toString()

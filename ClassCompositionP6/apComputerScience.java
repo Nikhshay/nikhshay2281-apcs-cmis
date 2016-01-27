@@ -24,10 +24,9 @@ public class apComputerScience
     {
         for( int i = 0; i < myStudents.size(); i++)
         {
-            if( myStudents.get(i).lname.equals( lastName ))
+            if( myStudents.get(i).getlname().equals( lastName ))
             {
-                Students.remove(i);
-                i--;
+                myStudents.remove(i);
             }
         }
     }
