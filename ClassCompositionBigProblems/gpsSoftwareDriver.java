@@ -6,25 +6,26 @@ public class gpsSoftwareDriver
 {
     public static void main (String[] arg)
     {
+        int i= 0;
         gpsSoftware Something = new gpsSoftware();
-        System.out.print(Something);
+        System.out.print("index Elevation \n" + Something);
         
         
         ArrayList<Integer> markers = new ArrayList<Integer>();
-        markers.add(1234567890);
-        markers.add(90000000);
-        markers.add(900000000);
-        markers.add(90000000);
-        markers.add(9000000);
-        markers.add(900000);
-        markers.add(90000);
-        markers.add(9000);
-        markers.add(900);
-        markers.add(90);
-        markers.add(9);
-        markers.add(6);
-        markers.add(3);
+        markers.add(120);
+        markers.add(907);
+        markers.add(92);
+        markers.add(96);
+        markers.add(904);
+        markers.add(970);
+        markers.add(941);
+        markers.add(424);
+        markers.add(953);
+        markers.add(985);
+        markers.add(9581);
+        markers.add(624);
+        markers.add(347);
         gpsSoftware SomethingA = new gpsSoftware(markers);
-        System.out.print(SomethingA);
+        System.out.print("index Elevation \n" + SomethingA);
     }
 }

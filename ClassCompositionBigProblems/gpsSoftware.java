@@ -4,17 +4,16 @@ import java.util.ArrayList;
 public class gpsSoftware
    {
     private ArrayList<Integer> markers = new ArrayList<Integer>();
-    int i;
     public gpsSoftware()
        {
-         markers.add(1234567890);
-         markers.add(1000000000);
-         markers.add(100000000);
-         markers.add(10000000);
-         markers.add(1000000);
-         markers.add(100000);
-         markers.add(10000);
-         markers.add(1000);
+         markers.add(123);
+         markers.add(1);
+         markers.add(100);
+         markers.add(10);
+         markers.add(14);
+         markers.add(15);
+         markers.add(175);
+         markers.add(178);
          markers.add(100);
          markers.add(10);
          markers.add(5);
@@ -26,15 +25,36 @@ public class gpsSoftware
        {
            this.markers = markers;
         }
-       
+    
+    public int getLength()
+    {
+        return markers.size()
+    }
+    
+    public void isLevelTrailSegment( int begin, int end )
+    {
+        for( int i = 0; i < markers.size(); i++ )
+        {
+            if(begin = end && markers.get(i) < 10)
+            {
+                
+            }
+        }
+    }
+        
+    public void addMarker(Integer Marker)
+    {
+        markers.add(Marker);
+    }
+        
     public String toString()
        {
         String output = new String();
         
         
-        for( Integer s : markers )
+        for( int i = 0; i < markers.size(); i++ )
            {
-            output += s + "\n";  
+            output = output + i + " " + markers.get(i) + "\n";  
            }
         
         return output;  
