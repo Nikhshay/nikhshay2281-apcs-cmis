@@ -5,16 +5,18 @@ public class Array2D3
 {
     public static void main ( String arg[] )
     {
-        int row = Integer.parseInt(JOptionPane.showInputDialog("Number of rows"));
         int col = Integer.parseInt(JOptionPane.showInputDialog("Number of column"));
+        int row = Integer.parseInt(JOptionPane.showInputDialog("Number of row"));
         int number[][] = new int[row][col];
         
-        for(int r = 0; row < number.length; row++)
+        for(int r = 1; r < number.length; r++)
         {
-            for(int c = 0; col < number[0].length; col++)
+            System.out.print(r-1 + "\t");
+            for(int c = 1; c < number[0].length; c++)
              {
-                number[row][col] = (int)(Math.random()*10); 
-                System.out.print(number[row][col] + "    "); 
+                System.out.print(c-1 + "\t");
+                number[r][c] = (r * c);  
+                System.out.print(number[r][c] + "\t"); 
              }
             System.out.print("\n"); 
         }
