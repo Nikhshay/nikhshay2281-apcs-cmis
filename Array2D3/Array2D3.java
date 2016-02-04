@@ -9,12 +9,16 @@ public class Array2D3
         int row = Integer.parseInt(JOptionPane.showInputDialog("Number of row"));
         int number[][] = new int[row][col];
         
+        for (int x = 0; x < col; x++)
+        {
+            System.out.print(x + "\t");
+        }
+        System.out.print("\n");
         for(int r = 1; r < number.length; r++)
         {
-            System.out.print(r-1 + "\t");
+            System.out.print(r + "\t");
             for(int c = 1; c < number[0].length; c++)
              {
-                System.out.print(c-1 + "\t");
                 number[r][c] = (r * c);  
                 System.out.print(number[r][c] + "\t"); 
              }

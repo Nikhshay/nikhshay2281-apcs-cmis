@@ -10,7 +10,7 @@ public class Array2D1
             for(int col = 0; col < number[0].length; col++)
              {
                 number[row][col] = (int)(Math.random()*10); 
-                System.out.print(number[row][col] + "    "); 
+                System.out.print(number[row][col] + "\t"); 
              }
             System.out.print("\n"); 
         }
