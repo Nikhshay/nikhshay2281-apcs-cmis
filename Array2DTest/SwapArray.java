@@ -16,50 +16,70 @@ public class SwapArray
                                     {1, 0, 4, 8, 3, 1, 0, 2, 1, 5},
                                     {1, 7, 3, 6, 3, 7, 8, 3, 3, 6}};
                                     
-        int[] rowsum = new int[10];
-        int[] colsum = new int[10];
-          int firstcol = 0;
+        int[] rowsum = new int[] {1,1,1,1,1,1,1,1,1,1,1};
+        int[] colsum = new int[] {1,1,1,1,1,1,1,1,1,1,1};
+        int firstcol = 0;
+        int intersect = 0;
         
           for(int r = 0; r < grid.length; r++)
           {  
             for(int c = 0; c < grid[0].length; c++)
              {
-              if (grid[r][c] == 0)
+                 
+              if (grid[r][c] > 0)
                 {
-                    grid[r][c] = 1;
+                          colsum[c]  *= grid[r][c] ;
+                          rowsum[r]  *=  grid[r][c];
                 } //multiply anything with 1 equal same amount
-                
-                if(c == 0)
-                {
-                  firstcol = grid[r][0];   
-                }
-                else
-                {
-                colsum[c] = firstcol * grid[r][c] ;
-              }
+              
              }
-            System.out.print(colsum[r]);
-            System.out.print("\n"); 
+            
           }
-         // this is to know the value
-        
+          
         int highcol = 0;
         int highrow = 0;
+        int rindex = 0;
+        int cindex = 0;
         
         for( int i = 0; i < colsum.length;i++)
         {
             if (colsum[i] > highcol)
             {
                 highcol = colsum[i];
-            }
-            
-            if (colsum[i] > highcol)
-            {
-                highrow = rowsum[i];
+                cindex = i;
             }
             
         }
         
+         for( int i = 0; i < rowsum.length;i++)
+         {
+          if (rowsum[i] > highrow)
+            {
+                highrow = rowsum[i];
+                rindex = i;
+            }
+        }
         
+        intersect = grid[rindex][cindex];
+        System.out.println(intersect);
+        
+         for(int r = 0; r < grid.length; r++)
+          {  
+            for(int c = 0; c < grid[0].length; c++)
+             {
+                 
+              if (grid[r][c] == intersect)
+                {
+                          grid[r][c] = 0;
+                } 
+                
+              else if(grid[r][c] == 0)
+              {
+                  grid[r][c] = intersect;
+                }
+             System.out.print(grid[r][c] + "\t");
+             }
+            System.out.print("\n");
+          }
     }
 }
