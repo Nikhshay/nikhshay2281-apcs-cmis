@@ -26,27 +26,38 @@ public class gpsSoftware
            this.markers = markers;
         }
     
-    public int getLength()
-    {
-        return markers.size()
-    }
-    
-    public void isLevelTrailSegment( int begin, int end )
-    {
-        for( int i = 0; i < markers.size(); i++ )
-        {
-            if(begin = end && markers.get(i) < 10)
-            {
-                
-            }
-        }
-    }
-        
     public void addMarker(Integer Marker)
     {
         markers.add(Marker);
     }
+    
+    public int getLength()
+    {
+        return markers.size();
+    }
+    
+    public boolean isLevelTrailSegment( int begin, int end )
+    {
+        for( int i = 1; i < markers.size(); i++ )
+        {
+            if(markers(0) = markers(markers.size()) && markers.get(i) - markers.get(i - 1) < 10)
+            {
+                return true;
+            }
+        }
+    }
         
+    public boolean isDifficult( int begin, int end )
+    {
+        for( int i = 1; i < markers.size(); i++ )
+        {
+            if(markers(i) != markers(i-1) && markers.get(i) - markers.get(i - 1) > 100)
+            {
+                return true;
+            }
+        }
+    }
+    
     public String toString()
        {
         String output = new String();
