@@ -3,7 +3,9 @@ import java.util.ArrayList;
 
 public class gpsSoftware
    {
-    private ArrayList<Integer> markers = new ArrayList<Integer>();
+    
+       ArrayList<Integer> markers = new ArrayList<Integer>();
+    
     public gpsSoftware()
        {
          markers.add(123);
@@ -33,30 +35,61 @@ public class gpsSoftware
     
     public int getLength()
     {
-        return markers.size();
+        int length = 0;
+        for(int i = 0; i < markers.size(); i++)
+        {
+            length += markers.get(i);
+        }
+        return length;
     }
     
-    public boolean isLevelTrailSegment( int begin, int end )
+    public boolean isLevelTrailSegment(int begin, int end)
     {
-        for( int i = 1; i < markers.size(); i++ )
+        boolean level = false;
+                    
+        for( int i = begin; i < end; i++ )
         {
-            if(markers(0) = markers(markers.size()) && markers.get(i) - markers.get(i - 1) < 10)
+            
+            if(i > begin && Math.abs(markers.get(i) - markers.get(i-1)) < 10)
+            {
+                level = true;
+            }
+        }
+        
+            if (markers.get(begin) == markers.get(end) && level == true)
             {
                 return true;
             }
-        }
+            else
+            {
+                return false;
+            }
+            
+        
     }
         
     public boolean isDifficult( int begin, int end )
     {
-        for( int i = 1; i < markers.size(); i++ )
+        int height = 0;
+        
+        for( int i = begin; i < end; i++ )
         {
-            if(markers(i) != markers(i-1) && markers.get(i) - markers.get(i - 1) > 100)
+            if( i > begin && Math.abs(markers.get(i) - markers.get(i-1)) > 0)
+            {
+                height += Math.abs(markers.get(i) - markers.get(i-1));
+            }  
+        }
+        
+            if (height > 100 && isLevelTrailSegment(begin, end))
             {
                 return true;
             }
+            else 
+            {
+                return false;
+            }
         }
-    }
+    
     
     public String toString()
        {
