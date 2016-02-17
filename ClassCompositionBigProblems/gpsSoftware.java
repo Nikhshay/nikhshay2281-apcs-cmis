@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class gpsSoftware
    {
     
-       ArrayList<Integer> markers = new ArrayList<Integer>();
+    ArrayList<Integer> markers = new ArrayList<Integer>();
     
     public gpsSoftware()
        {
@@ -74,7 +74,7 @@ public class gpsSoftware
         
         for( int i = begin; i < end; i++ )
         {
-            if( i > begin && Math.abs(markers.get(i) - markers.get(i-1)) > 0)
+            if( i > begin && markers.get(i) - markers.get(i-1) > 0)
             {
                 height += Math.abs(markers.get(i) - markers.get(i-1));
             }  
