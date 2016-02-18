@@ -13,6 +13,6 @@ public class Car
 
     public String toString()
     {
-        return String.format("Brand: %s\nModel: %s\n", brand, model);
+        return String.format("Brand: %s\nModel: %s", brand, model);
     }
 }

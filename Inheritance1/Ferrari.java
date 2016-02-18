@@ -13,7 +13,7 @@ public class Ferrari extends Car
         
     public String toString()
     {
-        return super.toString() + String.format("\nYear: %f", year);
+        return super.toString() + String.format("\nYear: %d", year);
     }
     
 }

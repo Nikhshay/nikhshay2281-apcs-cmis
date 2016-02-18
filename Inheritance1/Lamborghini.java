@@ -1,19 +1,19 @@
 package Inheritance1;
 
-public class Ferrari extends Car
+public class Lamborghini extends Ferrari
 {
-    int year = 0;
+    int price = 0;
     
-    public Ferrari(String brand, String model, int year)
+    public Lamborghini(String brand, String model, int year, int price)
     {
-        super(brand, model);
-        this.year = year;
+        super(brand, model, year);
+        this.price = price;
     }
     
         
     public String toString()
     {
-        return super.toString() + String.format("\nYear: %f", year);
+        return super.toString() + String.format("\nPrice: %d Baht", price);
     }
     
 }
