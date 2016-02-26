@@ -80,7 +80,7 @@ public class gpsSoftware
             }  
         }
         
-            if (height > 100 && isLevelTrailSegment(begin, end))
+            if (height > 100 && isLevelTrailSegment(begin, end) == false)
             {
                 return true;
             }
