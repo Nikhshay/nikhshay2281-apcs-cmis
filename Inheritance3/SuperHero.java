@@ -4,6 +4,7 @@ public abstract class SuperHero
    {
    private String suitColor;
    private boolean hasCape;
+   private String name;
 
    public SuperHero()
       {
@@ -31,6 +32,23 @@ public abstract class SuperHero
       return hasCape;	
       } // end method isCaped
       
-   public abstract String motto();   
+   public String getName()
+    {
+        return name; 
+    }
+   
+   public void setName(String name)
+    {
+        this.name = new String( name );
+    }
+  
+   public abstract String motto();  
+   
+   public String toString()
+    {
+        String output = new String("");
+        output =  getName() + "\t" +hasCape + "\t" + getSuitColor() + "\t" + motto();
+        return output;
+    }
 
    } // end abstract class SuperHero
