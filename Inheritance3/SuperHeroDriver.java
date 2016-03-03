@@ -6,21 +6,21 @@ public class SuperHeroDriver
 
     {
         AsteroidMan Stoner = new AsteroidMan();
-        FriedEggMan Yolk = new FriedEggMan();
+        FriedEggMan Omelet = new FriedEggMan();
         Deadpool Dp = new Deadpool();
         Stoner.setSuitColor("Black");
-        Yolk.setSuitColor("Yellow");
+        Omelet.setSuitColor("Yellow");
         Dp.setSuitColor("Red");
         Stoner.setCape(false);
-        Yolk.setCape(true);
+        Omelet.setCape(false);
         Dp.setCape(true);
         Stoner.setName("AsteroidMan");
-        Yolk.setName("FriedEggMan");
+        Omelet.setName("FriedEggMan");
         Dp.setName("Deadpool");
 
         ArrayList<SuperHero> heroes = new ArrayList<SuperHero>();
         heroes.add(Stoner);
-        heroes.add(Yolk);
+        heroes.add(Omelet);
         heroes.add(Dp);
         SuperHero[][] capedHeroes = new SuperHero[3][3];
         int i = 0;
