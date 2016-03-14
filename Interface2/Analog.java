@@ -4,6 +4,6 @@ public interface Analog
 
 {
 
-    public abstract String rotateRabbitEars();
+    public String rotateRabbitEars();
 
 } // end interface Analog

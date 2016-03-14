@@ -2,7 +2,7 @@ package Interface2;
 
 public abstract class TV
 {
-    private boolean tvOn = true;
+    private boolean tvOn;
 
     public TV()
     {

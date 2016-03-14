@@ -4,6 +4,6 @@ public interface Digital
 
 {
 
-    public abstract String connectHDMI();
+    public String connectHDMI();
 
 } // end interface Digital
