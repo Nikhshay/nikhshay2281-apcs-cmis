@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=SmoothActor
+comment0.text=\n\ An\ actor\ that\ are\ using\ doubles\ to\ represent\ it's\ location.\ If\ velocity\ \n\ and/or\ accelarartion\ is\ specified\ those\ will\ be\ used\ to\ move\ the\ actor.\n\ \n\ @author\ Poul\ Henriksen\ \n\ @version\ 2.0\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ move()
+comment2.text=\n\ Move\ the\ actor\ by\ applying\ current\ accelaration\ and\ velocity.according\ to\ the\ current\ velocity.\n
+comment3.params=
+comment3.target=void\ limitSpeed()
+comment3.text=\n\ Limits\ the\ speed\ to\ be\ within\ specified\ boundaries.\n
+comment4.params=x\ y
+comment4.target=void\ setLocation(int,\ int)
+comment4.text=\n\ Sets\ the\ location.\n
+comment5.params=speed
+comment5.target=void\ setMinimumSpeed(double)
+comment5.text=\ \n\ Optional\ minimal\ speed\ for\ this\ actor.\ \n\ The\ speed\ will\ never\ be\ less\ than\ the\ specified\ value.\ \n
+comment6.params=speed
+comment6.target=void\ setMaximumSpeed(double)
+comment6.text=\n\ Optional\ maximal\ speed\ for\ this\ actor.\ \n\ The\ speed\ will\ never\ be\ larger\ than\ the\ specified\ value.\ \n
+comment7.params=d
+comment7.target=void\ setSpeedDivider(double)
+comment7.text=\n\ Before\ applying\ the\ velocity,\ the\ speed\ is\ divided\ by\ this\ value.\ \n
+numComments=8

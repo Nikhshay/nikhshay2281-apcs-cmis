@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Ball
+comment1.params=
+comment1.target=void\ act()
+comment10.params=
+comment10.target=void\ remove()
+comment2.params=
+comment2.target=void\ move()
+comment3.params=
+comment3.target=void\ checkPaddle()
+comment4.params=
+comment4.target=void\ checkBrick()
+comment5.params=
+comment5.target=void\ checkWalls()
+comment6.params=
+comment6.target=void\ checkOut()
+comment7.params=dist
+comment7.target=void\ moveLR(int)
+comment8.params=dist
+comment8.target=void\ moveUD(int)
+comment9.params=
+comment9.target=void\ release()
+numComments=11

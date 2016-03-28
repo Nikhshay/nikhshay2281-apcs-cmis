@@ -1,0 +1,27 @@
+for(int i = 0; i < 6; i++)
+        {
+            while(count < 10)
+            {
+                Random gen = new Random();
+                brickNum = gen.nextInt(4);
+                if(brickNum == 0)
+                {
+                    addObject(new PurpleBrick(),brickX, brickY);
+                }
+                else if(brickNum == 1)
+                {
+                    addObject(new BlueBrick(),brickX, brickY);
+                }
+                else if(brickNum == 2)
+                {
+                    addObject(new GreenBrick(),brickX, brickY);
+                }
+                else
+                {
+                    addObject(new YellowBrick(),brickX, brickY);
+                }
+                brickX += 30;
+            }
+            brickX = 50;
+            brickY += 15;
+        }

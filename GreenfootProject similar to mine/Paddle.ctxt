@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Paddle
+comment1.params=world
+comment1.target=void\ addedToWorld(greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=boolean\ haveBall()
+comment4.params=dist
+comment4.target=void\ moveLR(int)
+comment5.params=dist
+comment5.target=void\ moveUD(int)
+comment6.params=
+comment6.target=void\ releaseBall()
+comment7.params=
+comment7.target=void\ newBall()
+comment8.params=
+comment8.target=void\ removeBall()
+numComments=9
