@@ -16,12 +16,12 @@ public class Paddle extends Actor
     {
         if (Greenfoot.isKeyDown ("right"))
          {
-         move(2);
+         move(10);
         }
         
         if (Greenfoot.isKeyDown ("left"))
          {
-         move(-2);
+         move(-10);
         }
     }    
 }

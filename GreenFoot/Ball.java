@@ -7,14 +7,15 @@ public class Ball extends Actor
     
     public void act() 
     {
-        moveAndDeflect() ;
+        moveAndDeflect();
+        breakBrick();
     }   
 
     public void moveAndDeflect()
     {
         move(speed);
         
-        if(getX() <= 5 || getX() >= getWorld().getWidth() -5||getY() <= 5||intersects((Actor)getWorld().getObjects(Paddle.class).get(0)))
+        if(getX() <= 10 || getX() >= getWorld().getWidth() -10||getY() <= 10||intersects((Actor)getWorld().getObjects(Paddle.class).get(0)))
         {
             turn(120);
         }
@@ -27,4 +28,10 @@ public class Ball extends Actor
         }
         
     }
-}    
+    
+    public void breakBrick()
+    {
+        
+    }
+}
+
