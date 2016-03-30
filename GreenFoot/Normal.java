@@ -17,8 +17,5 @@ public class Normal extends Brick
         // Add your action code here.
     }
     
-    public boolean isZero()
-    {
-        return true;
-    }
+    
 }
