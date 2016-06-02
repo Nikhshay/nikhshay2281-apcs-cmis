@@ -1,3 +1,5 @@
+package HelloWorld;
+
 import javax.swing.JOptionPane;
 
 public class InputData

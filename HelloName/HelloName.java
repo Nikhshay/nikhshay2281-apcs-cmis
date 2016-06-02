@@ -1,3 +1,5 @@
+package HelloName;
+
 import javax.swing.JOptionPane;
 
 public class HelloName

@@ -1,16 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-
-public class Brick extends Actor
+public abstract class Brick extends Actor
 {
-    
-    public void act() 
+    int power;
+    public Brick(int num)
     {
-        
-    }    
-    
-    public void collide()
-    {
-        getWorld().removeObject(this);
+        power = num;
     }
+    
+    public abstract void act(); 
+    
+    
 }

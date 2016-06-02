@@ -2,7 +2,7 @@ import greenfoot.*;
 
 public class Ball extends Actor
 {
-    private final int MAX_SPEED = 7;
+    private final int MAX_SPEED = 5;
     private int deltaX;  
     private int deltaY; 
     private int count = 2;

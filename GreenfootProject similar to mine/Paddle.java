@@ -7,7 +7,7 @@ public class Paddle extends SmoothActor
     private Ball myBall2;
     private boolean myBallbool = false;
     
-    private final int MAX_SPEED = 10;
+    private final int MAX_SPEED = 50;
     
     public void addedToWorld(World world)
     {

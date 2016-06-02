@@ -7,7 +7,7 @@ public class University
 
         String school1 = new String ( "GT" ); 
         String school2 = new String ( "UTA" ); 
-        String school3 = new String ( "Auckland" ); 
+        String school3 = new String ( "U" ); 
 
         System.out.println(school1.compareTo( school2 ));
         System.out.println(school2.compareTo( school1 ));
@@ -15,6 +15,12 @@ public class University
         System.out.println(school3.compareTo( school2 ));
         System.out.println(school1.compareTo( school3 ));       
         System.out.println(school3.compareTo( school1 ));
+        
+        System.out.println(school1.indexOf( school2 ));
+        System.out.println(school2.indexOf( school1 ));
+        System.out.println(school2.indexOf( school3 ));
+        System.out.println(school3.indexOf( school2 ));
+        
     }   
 }
 //a. What is the output of the compareTo() method telling us? 
